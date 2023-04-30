@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        header {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+
+        }
+
+        ul li a:hover {
+            color: rgb(82, 244, 6);
+        }
+
+        ul li a {
+            padding: 0px 31px;
+            text-decoration: none;
+            color: rgb(252, 10, 10);
+            display: inline-block;
+
+        }
+
+        li a::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 0;
+            background-color: blue;
+            transition: all .3s;
+        }
+
+        li a:hover::after {
+            width: 100%;
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 140px;
+
+        }
+
+        .hero {
+            max-width: 640px;
+            height: auto;
+        }
+
+        div h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 90px;
+            font-weight: 400px;
+            color: rgb(255, 254, 253);
+        }
+
+        body {
+            background-image: url("https://a-static.besthdwallpaper.com/simply-blue-wallpaper-2880x1620-29978_52.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        div h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400px;
+            font-size: 40px;
+            color: blueviolet;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="https://yt3.googleusercontent.com/ytc/AGIKgqM4kIzFVC-WypYi3JjSCE9i7K4Gp-ZxSCPtAZbj=s176-c-k-c0x00ffffff-no-rj"
+                alt="Hero Logo" height="110px" width="200px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Feature</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Use Cases</a></li>
+                <li><a href="#">Free Version</a></li>
+                <li><a href="#">Pro Version</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>BEAUTIFUL LANDING PAGE</h1>
+            <P>
+            <h2>We build this template to help you to create modern and beautiful marketing page</h2>
+            
+            </P>
+        </div>
+        <div>
+            <img src="https://wallpapercave.com/wp/wp3950068.jpg" alt="Image is Loading" class="hero">
+        </div>
+    </main>
+</body>
+
+</html>
